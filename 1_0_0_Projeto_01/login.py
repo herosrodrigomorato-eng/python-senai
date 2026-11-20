@@ -1,5 +1,6 @@
 import mod_msg
 import mod_inputs
+import menu_principal 
 USUARIO="heros"
 SENHA="30041"
 def valida_usuario(user):
@@ -26,6 +27,5 @@ def main():
     mod_msg.msg_login_ini()
     usuario_validado = valida_usuario(USUARIO)
     senha_valida=valida_senha(SENHA)
-    print("usuario valido como :", usuario_validado)
-    print("senha valida !",senha_valida)
+    mod_msg.msg_minu_principal()
    

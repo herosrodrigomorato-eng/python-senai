@@ -16,4 +16,20 @@ def recebe_senha(mensagem):
         except:
             print(" valor invalido !")
     return senha 
+def recebe_int(mensagem): 
+    while True : 
+        try: 
+            numero=int(input(mensagem))
+            break 
+        except: 
+                print("valor invalido ")
+    return numero
+def recebe_int(mensagem): 
+    while True : 
+        try: 
+            numero=float(input(mensagem). replace(""))
+            break 
+        except: 
+                print("valor invalido ")
+    return numero
        
