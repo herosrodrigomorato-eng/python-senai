@@ -32,4 +32,11 @@ def recebe_int(mensagem):
         except: 
                 print("valor invalido ")
     return numero
-       
+def recebe_opcao (): 
+    while True:
+        try: 
+            opcao=int(input("escolha uma opcao:" ))
+            break
+        except:
+            print(" valor invalido !")
+    return opcao

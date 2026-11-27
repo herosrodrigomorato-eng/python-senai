@@ -1,6 +1,8 @@
 import mod_msg
 import mod_inputs
 import menu_principal 
+import calculadora
+import cotafrete
 USUARIO="heros"
 SENHA="30041"
 def valida_usuario(user):
@@ -22,10 +24,23 @@ def valida_senha(senha1):
         else: 
             print("senha invalida! \n")
     return senha 
-
+def recebe_decisao(opcao):
+    while True:
+        if opcao==1:
+            calculadora.calc()
+            break
+        elif opcao==2:
+            cotafrete.executar()
+            break 
+        else:
+            print("opcao invalida !")
 def main():
     mod_msg.msg_login_ini()
-    usuario_validado = valida_usuario(USUARIO)
+    usuario_validado=valida_usuario(USUARIO)
     senha_valida=valida_senha(SENHA)
     mod_msg.msg_minu_principal()
+    opcao=mod_inputs.recebe_opcao()
+    recebe_decisao(opcao)
+    mod_msg.msg_CALC_ini()
+    mod_msg.msg_cota_ini()
    

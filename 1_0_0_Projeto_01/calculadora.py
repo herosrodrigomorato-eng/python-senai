@@ -1,4 +1,7 @@
 import math 
+import mod_msg
+import mod_inputs
+import menu_principal
 def calc():
     print("===== CALCULADORA =====")
     print("0 - sair()")
@@ -35,11 +38,10 @@ def calc():
                     if num2 != 0:
                         resultado = num1 / num2
                         print("Resultado:", resultado)
-                else:
-                    print("Erro! Não é possível dividir por zero.") 
-        elif opcao == "5":
-                resultado = num1*(num2/100)
-                print("resultado",resultado)
-
+                    else:
+                        print("Erro! Não é possível dividir por zero.") 
+                elif opcao == "5":
+                    resultado = num1*(num2/100)
+                    print("resultado",resultado)
         else:
             print("Opção inválida! Tente novamente.")
