@@ -1,0 +1,9 @@
+# estrutura whoile
+numero=10 
+while numero!=-1: 
+    print("numeros",numero)
+    numero += -1
+try: 
+    print("fim")
+except:
+    print("...............")    
